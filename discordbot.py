@@ -38,7 +38,7 @@ client = commands.Bot(command_prefix = "!",intents=intent)
 @client.event
 async def on_ready():
     print('成功登入')
- while true:     
+    while true:     
         activity_w = discord.Activity(type=discord.ActivityType.playing, name="正在服務 YT陳宥輔")
         await client.change_presence(activity=activity_w)   
         await asyncio.sleep(5)
